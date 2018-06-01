@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nickolas Boyer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Cousine', Helvetica, sans-serif;
+      background-color: #F0E8D6;
+      color: #2F2F2F;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    main {
+      margin: 10px 0px;
+    }
+
+    body a {
+      color: inherit;
+      text-decoration-style: dashed;
+      text-decoration-color: #e52f68;
+    }
+
+    #logo {
+      height: 170px;
+      width: 170px;
+    }
+
+    .title {
+      margin: 0;
+      color: #CB4444;
+      opacity: 0.91;
+    }
+
+    .text-block {
+    }
+
+    .description {
+      display: block;
+      line-height: 22px;
+      opacity: 0.91;
+      margin: 0px 10px;
+    }
+
+    .sign {
+      font-weight: 400;
+      line-height: 22px;
+      opacity: 0.91;
+      color: #C5C5C5;
+    }
+
+    .red-block {
+      height: 120px;
+      width: 50px;
+      position: absolute;
+      top:0;
+      left: 300px;
+      background-color: #CB4444;
+    }
+
+     @media only screen and (max-width: 600px) {
+      #description {
+        font-weight: 400;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: include Cousine font-->
+  <header>
+    <img src="img/logo.svg" id="logo">
+    <div class="red-block"></div>
+  </header>
+  <main>
+    <div class="text-block">
+      <span class="title">shortDescription =  <span class="sign">`</span></span>
+      <span class="description string-format">
+        Digital design,
+        development & consultancy.
+      </span>
+      <span class="sign">`</span>
+    </div>
+    <div class="text-block">
+        <span class="title">externalLinks = <span class="sign">[</span></span>
+        <span class="description json-format">
+            <a href="emailto:rutger@nickolasboyer.com">"https://github.com/nickolasboyer"</a><span class="sign">,</span> <br/>
+        </span>
+        <span class="sign">]</span>
+      </div>
+    <div class="text-block">
+      <span class="title">companyInfo = <span class="sign">{</span></span>
+      <span class="description json-format">
+          name: "Nickolas Boyer"<span class="sign">,</span> <br/>
+          email: <a href="emailto:rutger@nickolasboyer.com">"rutger@nickolasboyer.com"</a><span class="sign">,</span> <br/>
+          streetName: "Rijn en Schiekade 108"<span class="sign">,</span> <br/>
+          postalCode: "2311AR"<span class="sign">,</span> <br/>
+          city: "Leiden"<span class="sign">,</span> <br/>
+          kvkNumber: "69383081"<span class="sign">,</span> <br/>
+          vatNumber: "NL224166633B01"<span class="sign">,</span> <br/>
+      </span>
+      <span class="sign">}</span>
+    </div>
+    <!--
+    <div class="text-block">
+      <b class="title">projectList = <span class="sign">[</span></b>
+      <span class="description json-format">
+          "https://rutger.resulite.com"<span class="sign">,</span> <br/>
+          "https://whoishiring.me"<span class="sign">,</span> <br/>
+          "https://bierbord.nl"<span class="sign">,</span> <br/>
+      </span>
+      <span class="sign">]</span>
+    </div>
+    -->
+  </main>
+</body>
+</html>
