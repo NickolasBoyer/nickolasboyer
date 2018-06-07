@@ -30,6 +30,7 @@
     #logo {
       height: 170px;
       width: 170px;
+      fill: currentColor;
     }
 
     .title {
@@ -77,7 +78,12 @@
 </head>
 <body>
   <header>
-    <img src="img/logo.svg" id="logo">
+    <div id="logo">
+      <svg height="100%" width="100%" viewbox="0 0 100 100">
+        <image href="img/logo.svg" x="0" y="0" height="100" width="100">
+      </svg>
+    </div>
+    
     <div class="red-block"></div>
   </header>
   <main>
