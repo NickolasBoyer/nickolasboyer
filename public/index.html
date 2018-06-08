@@ -108,7 +108,7 @@
       </svg>
     </div>
     
-    <div class="red-block"></div>
+    <div id="red-block" class="red-block"></div>
   </header>
   <main>
     <div class="text-block">
@@ -152,8 +152,11 @@
     -->
   </main>
   <script type="text/javascript">
-    var body = document.querySelector("body")
-    if ((new Date()).getHours() > 22 || (new Date()).getHours() < 6) body.className += " night-mode";
+    var body = document.querySelector("body");
+    var block = document.getElementById("red-block");
+
+    if ((new Date()).getHours() > 22 || (new Date()).getHours() < 6) body.classList.add("night-mode");
+    block.onclick = function() {body.classList.toggle("night-mode")};
   </script>
 </body>
 </html>
