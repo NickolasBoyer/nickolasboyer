@@ -158,5 +158,18 @@
     if ((new Date()).getHours() > 22 || (new Date()).getHours() < 6) body.classList.add("night-mode");
     block.onclick = function() {body.classList.toggle("night-mode")};
   </script>
+  <script>
+  (function(f, a, t, h, o, m){
+    a[h]=a[h]||function(){
+      (a[h].q=a[h].q||[]).push(arguments)
+    };
+    o=f.createElement('script'),
+    m=f.getElementsByTagName('script')[0];
+    o.async=1; o.src=t; o.id='fathom-script';
+    m.parentNode.insertBefore(o,m)
+  })(document, window, '//my-fathom-site.com/tracker.js', 'fathom');
+  fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
 </body>
 </html>
